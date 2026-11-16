@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website của tôi</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+    color: #292544;
+}
+header {
+    background: #29205c;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a:hover {
+    color: #ffca70;
+}
+.hero {
+    min-height: 430px;
+    padding: 90px 10%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg,#6245d5,#a36be8,#ee8ab6);
+}
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #fff;
+    color: #6546c8;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #6043b5;
+}
+.about {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 22px;
+}
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #30205c15;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+.card .emoji {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.card h3 {
+    margin-bottom: 12px;
+    color: #6546c8;
+}
+.contact {
+    background: #e9e2ff;
+}
+footer {
+    background: #29205c;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+@media(max-width:600px) {
+    .hero h1 {font-size: 32px;}
+    nav a {margin-left: 8px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MY WEBSITE ✨</div>
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#hobby">Sở thích</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Xin chào! Tôi là Phúc Thành 👋</h1>
+    <p>Chào mừng bạn đến với website cá nhân của tôi.<br>
+    Đây là nơi chia sẻ sở thích, học tập và những mục tiêu tương lai.</p>
+    <a href="#about" class="btn">Khám phá ngay</a>
+</div>
+
+<section id="about">
+    <h2>🌟 Giới thiệu bản thân</h2>
+    <div class="about">
+        <p>Xin chào mọi người! Tôi là một sinh viên yêu thích công nghệ
+        và đang học tập chuyên ngành Lập trình Web tại FPT Polytechnic.
+        Tôi luôn cố gắng học hỏi, phát triển kỹ năng và hoàn thiện bản thân
+        để đạt được những mục tiêu trong tương lai.</p>
+    </div>
+</section>
+
+<section id="hobby">
+    <h2>💖 Sở thích của tôi</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3>Công nghệ</h3>
+            <p>Tìm hiểu máy tính và lập trình website.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">🎮</div>
+            <h3>Giải trí</h3>
+            <p>Chơi game và thư giãn sau giờ học.</p>
+        </div>
+        <div class="card">
+            <div class="emoji">✈️</div>
+            <h3>Du lịch</h3>
+            <p>Khám phá những địa điểm mới.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>📩 Liên hệ với tôi</h2>
+    <p>Cảm ơn bạn đã ghé thăm website của tôi!</p>
+    <a class="btn" href="mailto:emailcuaban@example.com">
+        Gửi email
+    </a>
+</section>
+
+<footer>
+    © 2026 - Website cá nhân của Phúc Thành ❤️
+</footer>
+
+</body>
+</html>
